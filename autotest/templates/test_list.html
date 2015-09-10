@@ -1,0 +1,51 @@
+﻿<html>
+<script language="javascript">
+var logdate,logname,logmode,logkind;
+    function query(){
+        logdate =document.form.logdate.value; 
+        logname = document.form.logname.value;
+        logmode = document.form.logmode.value;
+        logkind =document.form.logkind.value;
+        url = "/mon?logdate="+logdate+"&logname="+logname+"&logmode="+logmode+"&logkind="+logkind;
+        window.location.href = url;
+    }
+</script>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>自动化测试</title>
+</head>
+
+<body >
+
+                <form id="projectInfoForm" name="projectInfoForm">
+                            <input type="hidden" name="_form_token" value="PUWNHyyv7JPuISjOPkNJmo8WyuxgvOCo">
+         <div class="div_title">交易列表</div>    
+              <div class="div_content">
+                <table border="1"  class="table table-bordered">            
+                    <thead>
+                        <tr>
+                            <th>接口</th>                                                    
+                            <th>版本</th>
+                            <th>用例完成度</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    % for almc , alpath , wcd in result: 
+                       <tr>
+                            <td>
+                            ${almc}
+                            </td>                                                                                 
+                            <td>${alpath}</td>
+                            <td><a href="http://${host}:${port}/ltcs?almc=${almc}&alpath=${alpath}">联调</a></td>                                                                                                                                        
+                       </tr>
+                    % endfor
+                    </tbody>
+                </table>
+            </div>
+        </form>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>自动化测试</title>
+<link href="./index_files/V5-UI.css" type="text/css" rel="stylesheet">
+<link href="./index_files/jquery.jOrgChart.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./index_files/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./index_files/V5-UI.js"></script>
+    <script type="text/javascript" src="./index_files/javascript_main.js"></script>
+    <script src="./index_files/ajax.js" type="text/javascript"></script>
+    <script src="./index_files/WdatePicker.js" type="text/javascript"></script><link href="./index_files/WdatePicker.css" rel="stylesheet" type="text/css"><link href="./index_files/WdatePicker(1).css" rel="stylesheet" type="text/css">
+    <script src="./index_files/javascript_pop.js" type="text/javascript"></script>
+	
+    <script src="./index_files/jquery.pagination.js" type="text/javascript"></script>
+    <script src="./index_files/msg_notice.js" type="text/javascript"></script>
+    <script src="./index_files/prettify.js" type="text/javascript"></script>
+    <script src="./index_files/jquery.jOrgChart.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./index_files/base.css">
+    <script type="text/javascript" src="./index_files/index.js"></script>
+    <script language="JavaScript" src="./index_files/FusionCharts.js"></script>
+    <script type="text/javascript" language="javascript">
+        $.ajaxSetup({
+            cache: false //close AJAX cache ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false"
+        });
+    </script>
+</head>
+<body style="zoom: 1;">
+
+
+<div id="DivContactRight">
+    <div class="DivContactTop"></div>
+	<div class="DivContact">
+	
+	<span></span>
+	</div>
+	<div class="DivContactFoot"></div>
+</div>	
+
+
+
+
+    <div class="top">
+        <div class="user">
+            尊敬的用户，<b style="color: Red; font-size: 18px;">0000</b> 欢迎你!&nbsp;
+            <img src="./index_files/exit.png" width="19" height="19" style="position: relative;
+                top: 3px;">&nbsp; <a href="#" onclick="javascript:alert('暂未开放');" style="color: white">安全退出</a></div>
+    </div>
+    <div id="daohang">
+        <img src="./index_files/logo.png" width="208" height="60" id="logo">
+        <ul class="navgion">
+            <li class="navLi">
+                <div class="icon icon-home">
+                </div>
+                <!--a class="navtext" href="./index_files/welcome.html">首页</a> </li-->
+                <a class="navtext" href="http://${host}:${port}/zx_main">首页</a> </li>
+            
+            <li class="navLi">
+                <div class="icon icon-vip">
+                </div>
+                <a class="navtext">
+                    用户管理</a>
+                <ul class="ermenu" style="display: none;">
+                      <li> <a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">用户注册</a></li>
+                      <li><a href="#" onclick="javascript:alert('暂未开放');">状态查询</a></li>
+					  <li> <a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">资料查询</a></li>
+					   <li> <a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">资料修改</a></li>
+					
+                </ul>
+            </li>
+            
+            <li class="navLi">
+                <div class="icon icon-pay2">
+                </div>
+                <a class="navtext">
+                    单体测试</a>
+                <ul class="ermenu" style="display: none;">
+			    <li><a href="http://${host}:${port}/oatest" target="mainFrame" class="sm4">报文发送</a></li>
+				<li><a href="http://${host}:${port}/auto_refresh" target="mainFrame" class="sm4">报文监控</a></li>
+				<li><a href="http://${host}:${port}/cpdm_list" target="mainFrame" class="sm4">案例列表</a></li>
+                    
+                </ul>
+            </li>
+			
+			<li class="navLi">
+                <div class="icon icon-count">
+                </div>
+                <a class="navtext">
+                    仿真服务端</a>
+                <ul class="ermenu" style="display: none;">
+                 <li><a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">服务端启动</a></li>
+				 <li> <a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">服务端配置</a></li>
+				 <li> <a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">进程查询</a></li>
+				 <li> <a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">日志查看</a></li>
+				  <li><a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">日志监控</a></li>
+				<!--
+				<li><a href="Client_Bank/OnlinePay.asp"  target="mainFrame" class="sm4">支付宝在线充值</a></li>
+				<li><a href="#" onclick="javascript:alert('暂未开放');">货币交易大厅</a></li>
+				-->
+                    
+                </ul>
+            </li>
+			
+			<li class="navLi">
+                <div class="icon icon-pay">
+                </div>
+                <a class="navtext">
+                    仿真客户端</a>
+                <ul class="ermenu" style="display: none;">
+                    
+						<li><a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">案例列表</a></li>
+						<li><a href="#" onclick="javascript:alert('暂未开放');" target="mainFrame" class="sm4">自主测试</a></li>
+
+                    
+                </ul>
+            </li>
+            
+            <li class="navLi">
+                <div class="icon icon-server">
+                </div>
+                <a class="navtext">
+                    日志管理</a>
+                <ul class="ermenu" style="display: none;">
+                  
+			      <li> <a href="http://${host}:${port}/gaps_index_log" target="mainFrame" class="sm4">GAPS日志</a></li>
+				 <li> <a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">管理台日志</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li class="navLi">
+                <div class="icon icon-news">
+                </div>
+                <a class="navtext">
+                    常用工具</a>
+                <ul class="ermenu" style="display: none;">
+                            
+                    <li><a href="http://${host}:${port}/cygj_jzzh" target="mainFrame" class="sm4">进制转换</a></li>
+					<li><a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">8583报文bit位图</a></li>
+			        <li><a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">8583报文解析</a></li>
+                </ul>
+            </li>
+            
+			
+            <li class="navLi">
+                <div class="icon icon-center">
+                </div>
+                <a class="navtext">
+                    帮助</a>
+                <ul class="ermenu" style="display: none;">
+
+						<li><a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">教程文档</a></li>
+						<li><a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">版本升级</a></li>
+						<li><a href="http://${host}:${port}/gaps_log" target="mainFrame" class="sm4">关于</a>(<span id="ECS_CARTINFO">0</span>)</li>
+					<li><a href="http://www.levelappro.com/news/class/?1.html" target="mainFrame" class="sm4">新闻/公告</a></li>
+					<li><a href="http://www.levelappro.com/" target="mainFrame" class="sm4">联系我们</a></li>
+                </ul>
+				
+            </li>
+            
+        </ul>
+    </div>
+    <div class="top2">
+        <div class="top2Content">
+            <img src="./index_files/xx.jpg" width="50" height="33">
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <ul class="menu">
+				<li>
+                    <div>
+                        <span class="icon2 web2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">修改资料</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 user2"></span><a href="http://${host}:${port}/cygj_jzzh" target="mainFrame" class="sm4">进制转换</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 edit2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">日志查看</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 store2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">业务列表</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 news2"></span><a href="http://www.levelappro.com" target="mainFrame" class="sm4">公告新闻</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 money2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">配置管理</a></div>
+                </li>
+                <li>
+                    <div>
+                        <span class="icon2 pay2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">版本升级</a></div>
+                </li>
+				<li>
+                    <div>
+                        <span class="icon2 pay2"></span><a href="http://${host}:${port}/index_files/welcome.html" target="mainFrame" class="sm4">教程</a></div>
+						 
+                </li>
+				<li>
+                    <div>
+                        <span class="icon2 pay2"></span><a href="http://www.levelappro.com" target="mainFrame" class="sm4">联系我们</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="right" id="container">
+            <!--内容-->
+			<iframe allowtransparency="true" name="mainFrame" id="mainFrame" style="background:#FFFFFF;" src="./index_files/welcome.html" width="100%" onload="this.height=mainFrame.document.body.scrollHeight&lt;450 ? 450 : mainFrame.document.body.scrollHeight;" scrolling="no" border="0" frameborder="0" height="540"></iframe>
+        </div>
+        <div style="clear: both">
+        </div>
+    </div>
+    <div id="flotter">
+        	<center><p>
+	Copyright ? 2012-2023 LEVEL Corporation, All Rights Reserved &nbsp;<span style="line-height:1.5;">平欣电子版权所有！</span>
+</p></center>
+    </div>
+  <!--  <script type="text/javascript">
+        initmsg_notice();
+    </script>-->
+<!--	<div id="uesrmsg"><a href="javascript:void(0);" onclick="openmsg()"><em></em><div id="msgtitle">在线客服</div></a></div>
+	<div id="msg_box"><div class="title"><span stly="float:left">在线客服</span><ul id="now_mem"></ul></div><div id="addmem" onclick="selectmid();" title="点我选择会员">+</div><div id="contentBox" style="height: 125px; padding-top: 1px;"><textarea class="msg_info" type="text" id="msgcontent" readonly="">暂无您的短消息</textarea></div><div><textarea class="msg_input" maxlength="500" id="sendmsg" onfocus="if(value==&#39;回复内容&#39;){value=&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;回复内容&#39;}" type="text">回复内容</textarea></div><input type="submit" class="msg_sub" onclick="sendmsg()" value="发 送"><input type="submit" class="msg_sub" onclick="closemsg()" style="float: left" value="关闭会话"></div><div id="uesrnotice"><a href="javascript:void(0);" onclick="opennotice()">平台公告</a></div>
+	<div id="notice_box"><div class="title">平台公告</div><textarea class="msg_info" type="text" id="nccontent" maxid="0" readonly=""></textarea>
+	<input type="submit" class="msg_sub" onclick="closenotice()" value="关闭会话" style="float: left"></div>-->
+    <!--<script type="text/javascript" src="imagesNew/ZeroClipboard.js"></script>-->
+    <script type="text/javascript">
+        // 定义一个新的复制对象
+        var clip = new ZeroClipboard(document.getElementById("fenxian"), {
+            moviePath: "Regedit/ZeroClipboard.swf"
+        });
+
+        // 复制内容到剪贴板成功后的操作
+        clip.on('complete', function (client, args) {
+            alert("复制成功!");
+        });
+       // initmsg_notice();
+    </script>
+	<!--
+	<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" data-clipboard-ready="true" style="position: absolute; left: -9999px; top: -9999px; width: 15px; height: 15px; z-index: 9999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="Regedit/ZeroClipboard.swf?nocache=1405685615090">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="">         <embed src="Regedit/ZeroClipboard.swf?nocache=1405685615090" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="" scale="exactfit">                </object></div>-->
+
+
+</body></html>

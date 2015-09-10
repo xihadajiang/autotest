@@ -1,0 +1,116 @@
+﻿<html>
+<script language="javascript">
+        function Login() {
+		 if (document.theForm1.username.value==""){
+			  alert("用户名不能为空");
+			  document.theForm1.username.focus();
+			  return false;
+			  }
+			  
+		 if (document.theForm1.userpassword.value == ""){
+			  alert("密码不能为空");
+			  document.theForm1.userpassword.focus();
+			  return false;
+			  }  
+			  
+			 
+		 if (document.theForm1.CheckCode.value == ""){
+			  alert("注册码不能为空");
+			  document.theForm1.CheckCode.focus();
+			  return false;
+			  } 
+			 
+			 /*  
+			document.theForm1.BackLoginBtn.disabled = false;  
+			document.theForm1.BackLoginBtn.scr = "images/Logining.jpg";
+			*/
+			return true;
+		}   
+		
+        function keyLogin() {
+            if (event.keyCode == 13)   //回车键的键值为13   
+                Login();
+        }
+        function reset() {
+            $("#txtname").val("");
+            $("#txtpwd").val("");
+        }
+
+        function OpenWindow(url, title, width, height) {
+            var iTop = (window.screen.height - 30 - height) / 2; //获得窗口的垂直位置;
+            var iLeft = (window.screen.width - 10 - width) / 2; //获得窗口的水平位置;
+            window.open(url, title, 'height=' + height + ', width=' + width + ', top=' + iTop + ', left=' + iLeft + ', toolbar=no, menubar=no, scrollbars=no,resizable=no,location=no, status=no');
+        }
+    </script>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>自动化测试</title>
+<link rel="stylesheet" type="text/css" href="./index_files/loginnew.css">
+<script type="text/javascript" src="./index_files/jquery-1.9.0.min.js"></script>
+<script src="./index_files/ajax.js" type="text/javascript"></script>
+
+</head>
+
+<body onkeydown="keyLogin();" style="zoom: 1;">
+
+<form id="theForm1" name="theForm1" method="post" action="/zx_index_submit">
+    <div>
+        <div class="loginicon">
+            <img src="./index_files/logo.png" width="964" height="99">
+        </div>
+        <div class="login">
+            <table>
+                <tbody><tr>
+                    <td colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="line">
+                        <label for="textfield">
+                            用户名</label>
+                    </td>
+                    <td>
+                        <input class="input_text" type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 12px;" class="line">
+                        <label for="textfield2">
+                            密&nbsp;码</label>
+                    </td>
+                    <td style="padding-top: 12px">
+                        <input class="input_text" type="password" name="userpassword" id="userpassword">
+                    </td>
+                </tr>
+                <tr>
+                    <!--td style="padding-top: 12px;" class="line">
+                        <label for="textfield2">
+                            验证码</label>
+                    </td>
+                    <td style="padding-top: 12px">
+                        <input class="input_text" type="text" name="CheckCode" id="CheckCode" style="width: 100px;
+                            float: left; *margin-left: 10px">
+                        <img src="./index_files/code.asp" onclick="this.src=&#39;inc/code.asp?&#39;+Math.random()" width="77" height="33" style="float: left; margin-left: 10px; margin-top: 1px;">
+                    </td-->
+                </tr>
+                <tr>
+                    <td style="padding-top: 12px" class="line">
+                    </td>
+                    <td style="padding-top: 12px">
+                        <input name="" class="btn btn_green" type="submit" value="登录" onclick="return Login();">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+ </form>
+
+
+
+</body></html>

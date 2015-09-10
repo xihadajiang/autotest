@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>GAPS日志查询服务</title>
+</head>
+
+<body style="text-align: center">
+
+<form method="POST" action="--GAPS-LOGVIEW--">
+	<p>GAPS日志查询服务</p>                                                                                 
+	<table border="1" width="480" align="center" id="table1">
+		<tr>
+			<td width="82" align="right"><font size="2">日志日期</font></td>
+			<td>
+			<input type="text" name="logdate" size="20" value="20050101" tabindex="1"></td>
+		</tr>
+		<tr>
+			<td width="82" align="right"><font size="2">日志名称</font></td>
+			<td><select size="1" name="logname" tabindex="2">
+			<option value="test@TESTMON@3">test接入日志</option>
+			<option value="SDSsvr_DEBUG">ACIDE调试专用日志</option>
+			<option value="XSDSsvr">冲正处理日志</option>
+			<option value="systask">任务器接入日志</option>
+			<option value="cxs@CXS_MON@8">前台接入日志</option>
+			<option value="sys_gbism">管理台接入日志</option>
+			<option value="sys_cibzx@mon_sys_cibzx@3">兴业银银平台接入日志</option>
+			<option value="99.sys_cibzx@mon_sys_cibzx@3">兴业接入异步处理日志</option>	
+			<option value="sys_smqt@mon_sys_smqt@3">青海前台系统</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="82" align="right"><font size="2">获取方式</font></td>
+			<td>
+			<p style="margin-top: 8px; margin-bottom: 2px"><input type="radio" value="0"  name="logmode" checked tabindex="1"><font size="2">取最后一笔</font></p>
+			<p style="margin-top: 8px; margin-bottom: 2px"><input type="radio" name="logmode" value="1" tabindex="2"><font size="2">指定流水号&nbsp;
+					<input type="text" name="lsh" size="20" value="1" tabindex="5"></font></p>
+			<p style="margin-top: 8px; margin-bottom: 2px"><input type="radio" name="logmode" value="2" tabindex="3"><font size="2">倒数第N笔&nbsp;&nbsp; 
+		        <input type="text" name="backbs" size="20" value="1" tabindex="7"></font></p>
+			<p style="margin-top: 8px; margin-bottom: 5px"><input type="radio" value="3"  name="logmode" tabindex="4"><font size="2">取交易流水列表</font><br />
+			   <font size="2">&nbsp;&nbsp;&nbsp;关键字&nbsp;<input type="text" name="keylist" size="10" value="" tabindex="7"></font>&nbsp;&nbsp;&nbsp;&nbsp;<font size="2">处理时间&nbsp;<input type="text" name="listtime" size="8" value="0" tabindex="7">毫秒</font></p>
+			<p style="margin-top: 8px; margin-bottom: 5px"><input type="radio" value="4"  name="logmode" tabindex="5"><font size="2">取监控信息列表</font><br />
+			   <font size="2">&nbsp;&nbsp;&nbsp;关键字&nbsp;<input type="text" name="keymon" size="10" value="" tabindex="7"></font>&nbsp;&nbsp;&nbsp;&nbsp;<font size="2">处理时间&nbsp;<input type="text" name="montime" size="8" value="0" tabindex="7">毫秒</font></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="82" align="right"><font size="2">日志格式</font></td>
+			<td><select size="1" name="logkind" tabindex="8">
+			<option value="1" selected>1 原始格式</option>
+			<option value="2">2 普通型格式</option>
+			<option value="3">3 增强型格式</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="82">　</td>
+			<td>　</td>
+		</tr>
+	</table>
+	<p><input type="submit" value="提交" name="B1">&nbsp;
+	<input type="reset" value="重置" name="B2"></p>
+	<p>　</p>
+	<p>　</p>
+    <p >版权所有(C) 2005-2013 恒生电子股份有限公司
+	<a href="http://www.hundsun.com/">www.hundsun.com&nbsp;</a></p>
+</form>
+
+</body>
+
+</html>
+
+

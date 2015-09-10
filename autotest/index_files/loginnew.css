@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ 
+background-color:#2a6dc9;
+position:absolute;
+top:0;
+left:0;
+bottom:0;
+right:0
+
+}
+.loginicon{
+	height:99px;
+	width:964px;
+	margin:0 auto;
+	margin-top:110px;
+	text-align:left;
+	margin-bottom:20px
+	}
+.login{
+	width:548px;
+	height:409px;
+	background-image:url(../images/login_bg.png);
+	margin:0 auto;
+	}
+
+.login table{
+	width:100%;
+	height:80%;
+		}
+		.login table tr{
+			line-height:30px;
+			height:30px;
+			}
+.login table td{
+	border-collapse:collapse;
+	text-align:left;
+	}
+.line{
+	width:114px;
+	padding-right:16px;
+	text-align:right !important;
+
+	}
+.line label{
+	text-align:right;
+    font-family:"΢���ź�";
+	font-size:16px;
+/*	font-weight:bold;*/
+	color:#545557
+	}
+.input_text{
+	width:249px;
+	height:32px;
+	line-height:38px;
+	border:1px solid #d1d1d1;
+	background:url(../images/input_text.jpg) repeat-x;
+	background-color:#4a7dc1;
+	text-indent:10px;
+	font-family:"����";
+	color:#ffffff;
+	}
+
+/*****************************��ť********************************/
+
+.btn{
+	width:101px;
+	height:39px;
+	border-radius:3px;
+	box-shadow:0 1px 0 #c8de3e inset;
+	font-family:"΢���ź�";
+	font-size:16px;
+	}
+.btn_green{
+	
+	background-image:url(../images/button_green.png);
+	color:#ffffff;
+	border:0;
+	box-shadow:0 0 0 #ffffff inset;
+}
+.btn_orange{
+	background-color:#d9912d;
+	border:1px solid #c07917;
+	box-shadow:0 1px 0 #eba749 inset;
+	color:#774602
+}
+/*****************************��ť********************************/
